@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speech to Text</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <header>
+      <div class="brand">
+        <div class="logo glow">ST</div>
+        <div>
+          <h1>Speech to Text Pad</h1>
+          <div class="lead small">Notes appear on the right</div>
+        </div>
+      </div>
+      <div class="small">Click Start to begin</div>
+    </header>
+
+    <main class="panel">
+
+      <div class="controls">
+        <button id="startBtn" class="primary">Start Listening</button>
+        <button id="stopBtn">Stop Listening</button>
+      </div>
+
+      <textarea id="textBox" placeholder="Speech will appear here"></textarea>
+
+      <div class="controls" style="margin-top: 14px; justify-content: center;">
+        <button id="saveBtn">Save Note</button>
+      </div>
+
+    </main>
+
+    <aside class="notes glow">
+      <h3>Saved Notes</h3>
+      <div class="hint small">Click delete to remove a note</div>
+      <ul id="notesList"></ul>
+      <div class="notes-footer">
+        <button id="clearAllBtn" class="clearBtn">Clear All Notes</button>
+      </div>
+    </aside>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
